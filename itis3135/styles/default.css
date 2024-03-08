@@ -13,7 +13,6 @@ a {
 nav a:hover, p a:hover  {
     color: cornflowerblue;
     background-color: cyan;
-    text-decoration: line;
 }
 
 h2 {
