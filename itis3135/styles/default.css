@@ -1,0 +1,41 @@
+body {
+    background-color: cornflowerblue;
+    text-align: center;
+    color: midnightblue;
+    font-family: monospace;
+}
+
+a {
+    color: cyan;
+    text-decoration: none;
+}
+
+nav a:hover, p a:hover  {
+    color: cornflowerblue;
+    background-color: cyan;
+    text-decoration: line;
+}
+
+h2 {
+    text-align: center;
+}
+
+figure > img {
+    width: 55%;
+}
+
+figure > figcaption {
+    font-style: italic;
+}
+
+ul {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+}
+
+div > p {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+}
