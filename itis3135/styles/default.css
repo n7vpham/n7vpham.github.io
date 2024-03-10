@@ -1,8 +1,12 @@
+html {
+    box-sizing: border-box;
+}
+
 body {
     background-color: cornflowerblue;
     text-align: center;
     color: midnightblue;
-    font-family: monospace;
+    font-family: sans-serif, arial;
 }
 
 a {
@@ -15,26 +19,54 @@ nav a:hover, p a:hover  {
     background-color: cyan;
 }
 
-h2 {
-    text-align: center;
-}
-
 figure > img {
-    width: 55%;
+    width: 54%;
 }
 
-figure > figcaption {
+figcaption {
     font-style: italic;
-}
-
-ul {
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: left;
 }
 
 .paragraph {
     margin-left: 10%;
     margin-right: 10%;
     text-align: left;
+}
+
+#table-draft  ul {
+    display: inline-block;
+    margin: 0;
+    text-align: left;
+}
+
+#table-wrap {
+    background-color: lavender;
+    max-width: 40rem;
+    margin: 1.4rem auto;
+    border: 2px solid midnightblue;
+}
+
+#table-wrap h3 {
+    background-color: midnightblue;
+    color: lavender;
+}
+
+#table-wrap h3:first-of-type {
+    margin-top: 0;
+}
+
+#table-wrap table {
+    border-collapse: collapse;
+    border: 0;
+    width: 100%;
+    position: relative;   
+}
+
+thead > tr {
+    background-color: steelblue;
+    color: lavender;
+}
+
+.odd {
+    background-color: lightsteelblue;
 }
