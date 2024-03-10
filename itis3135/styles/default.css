@@ -33,6 +33,7 @@ figcaption {
     text-align: left;
 }
 
+/* For tables.html */
 #table-draft  ul {
     display: inline-block;
     margin: 0;
@@ -62,11 +63,58 @@ figcaption {
     position: relative;   
 }
 
-thead > tr {
+#table-wrap thead > tr {
     background-color: steelblue;
     color: lavender;
 }
 
 .odd {
     background-color: lightsteelblue;
+}
+
+/* For form.html */
+
+#forms {
+    text-align: left;
+    background-color: lightsteelblue;
+    margin: 1em auto;
+    max-width: 500px;
+    width: 60vw;
+    min-width: 300px;
+}
+
+#forms h3 {
+    border-bottom: 4px solid cornflowerblue;
+}
+
+#forms label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input {
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+.inline {
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0.5em 0 0;
+}
+
+#forms fieldset {
+    border: none;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+#splitter {
+    margin-top: 1em;
+}
+fieldset:last-of-type {
+    margin: 0 auto;
+    text-align: center;
 }
