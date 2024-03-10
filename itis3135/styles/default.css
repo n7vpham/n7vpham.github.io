@@ -14,13 +14,18 @@ a {
     text-decoration: none;
 }
 
-nav a:hover, p a:hover  {
+a:hover {
     color: cornflowerblue;
     background-color: cyan;
 }
 
+.tests:hover {
+    background-color: unset;
+    color: unset;
+}
+
 figure > img {
-    width: 54%;
+    width: 50%;
 }
 
 figcaption {
@@ -117,4 +122,12 @@ p:last-of-type {
 fieldset:last-of-type {
     margin: 0 auto;
     text-align: center;
+}
+
+/* For website_evaluations.html*/
+hr {
+    width: 80%;
+    height: 1.5px;
+    background-color: steelblue;
+    border: steelblue;
 }
