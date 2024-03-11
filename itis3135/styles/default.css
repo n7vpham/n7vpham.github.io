@@ -26,6 +26,8 @@ a:hover {
 
 figure > img {
     width: 44%;
+    box-shadow: 0 0 3px 3px midnightblue;
+    border-radius: 8px 10px;
 }
 
 figcaption {
@@ -39,7 +41,7 @@ figcaption {
 }
 
 .paragraph-end {
-    padding-bottom: 1em;
+    padding-bottom: 1.4em;
 }
 
 /* For tables.html */
