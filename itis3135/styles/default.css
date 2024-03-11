@@ -127,7 +127,7 @@ fieldset:last-of-type {
 /* For website_evaluations.html*/
 hr {
     width: 80%;
-    height: 1.5px;
+    height: 1px;
     background-color: steelblue;
-    border: steelblue;
+    border-color: steelblue;
 }
