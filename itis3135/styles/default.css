@@ -25,7 +25,7 @@ a:hover {
 }
 
 figure > img {
-    width: 50%;
+    width: 44%;
 }
 
 figcaption {
@@ -36,6 +36,10 @@ figcaption {
     margin-left: 10%;
     margin-right: 10%;
     text-align: left;
+}
+
+.paragraph-end {
+    padding-bottom: 1em;
 }
 
 /* For tables.html */
@@ -119,6 +123,7 @@ p:last-of-type {
 #splitter {
     margin-top: 1em;
 }
+
 fieldset:last-of-type {
     margin: 0 auto;
     text-align: center;
