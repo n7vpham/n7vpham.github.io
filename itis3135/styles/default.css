@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 body {
@@ -7,6 +8,11 @@ body {
     text-align: center;
     color: midnightblue;
     font-family: sans-serif, arial;
+    font-size: 1.7rem;
+}
+
+p {
+    font-size: 1.9rem;
 }
 
 a {
@@ -53,9 +59,10 @@ figcaption {
 
 #table-wrap {
     background-color: lavender;
-    max-width: 40rem;
+    max-width: 40em;
     margin: 1.4rem auto;
     border: 2px solid midnightblue;
+    overflow: hidden;
 }
 
 #table-wrap h3 {
