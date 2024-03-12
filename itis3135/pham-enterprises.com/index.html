@@ -3,16 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pham Enterprises Design Page</title>
+    <title>Pham Enterprises</title>
     <style>
-        body {
-            background-color: cornflowerblue;
-            color: darkred;
-            text-align: center;
+        html {
+            font-size: 62.5%;
+            box-sizing: border-box;
         }
+
+        html, body {
+            min-height: 100%;
+            margin: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            text-align: center;
+            font-size: 2rem;
+            font-family: sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+            color: #171d21;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem;
+            background-color: #171d21;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.3rem;
+            white-space: nowrap;
+            height: 11rem;
+            color: #f76f2c;
+        }
+
+        main {
+            background-color: #f3e9dc;
+            min-height: calc(100vh - 20rem);
+            padding-bottom: 2rem;
+        }
+
+        img {
+            height: 100%;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+            padding-top: 4rem;
+        }
+
+        p {
+            margin: 0 10%;
+            text-align: left;
+        }
+
+        ul {
+            display: inline-block;
+            padding-left: 0;
+            text-align: left;
+            margin-top: -0.1rem;
+        }        
+
+        footer {
+            height: 9rem;
+            background-color: #95818d;
+            border-top: 4px solid #772014;
+            padding-bottom: 0.2rem;
+        }
+
     </style>
 </head>
 <body>
-    <p>This is the design page of Pham Enterprises</p>
+    <header>
+        <img src="nplogo.png" alt="Logo of Pham Enterprises">
+        <h1>ham Enterprises</h1>
+    </header>
+    <main>
+        <h2>About Us</h2>
+        <p>Founded in 2014, Pham Enterprises remains one of the fastest-growing tech private equity firms in North 
+            America. We assist businesses in cutting costs while dodging lawsuits, ethically. In the span of ten years, our 
+            team has grown into this huge amazing family of nearly 1000 employees each putting clients at the heart of everything we do.</p>
+        <h2>Why Us?</h2>
+        <ul>
+            <li>We the best</li>
+            <li>We think good</li>
+            <li>We look great</li>
+            <li>We smell amazing</li>
+            <li>We feel fantastic</li>
+            <li>We the best</li>
+        </ul>
+    </main>
+    <footer>
+        <address>
+            &copy;2014-2024 Pham Enterprises
+            <br> Charlotte
+            <br> North Carolina
+            <br> USA
+        </address>
+    </footer>
 </body>
 </html>
