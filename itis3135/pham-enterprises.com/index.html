@@ -5,52 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pham Enterprises</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         html {
+            width: 100%;
+            height: 100%;
             font-size: 62.5%;
             box-sizing: border-box;
         }
 
-        html, body {
-            min-height: 100%;
-            margin: 0;
-        }
-
         body {
-            min-height: 100vh;
+            width: 100%;
+            height: 100%;
             text-align: center;
             font-size: 2rem;
             font-family: sans-serif;
-            margin: 0;
             overflow-x: hidden;
-            color: #171d21;
+            background-color: #f3e9dc;
         }
 
         header {
             text-align: center;
-            padding: 3rem;
+            padding: 2rem;
             background-color: #171d21;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 0.3rem;
             white-space: nowrap;
-            height: 11rem;
+            height: 10rem;
             color: #f76f2c;
         }
 
         main {
-            background-color: #f3e9dc;
-            min-height: calc(100vh - 20rem);
-            padding-bottom: 2rem;
+            min-height: calc(100vh - 40px);
         }
 
         img {
             height: 100%;
-        }
-
-        h2:first-of-type {
-            margin-top: 0;
-            padding-top: 4rem;
         }
 
         p {
@@ -59,17 +54,28 @@
         }
 
         ul {
+            margin: 0;
             display: inline-block;
             padding-left: 0;
             text-align: left;
-            margin-top: -0.1rem;
         }        
 
         footer {
             height: 9rem;
             background-color: #95818d;
             border-top: 4px solid #772014;
-            padding-bottom: 0.2rem;
+        }
+
+        h2 {
+            padding-top: 3rem;
+        }
+        
+        p {
+            padding-top: 1.5rem;
+        }
+
+        ul {
+            padding-top: 1.5rem;
         }
 
     </style>
@@ -80,11 +86,11 @@
         <h1>ham Enterprises</h1>
     </header>
     <main>
-        <h2>About Us</h2>
+        <h2>Who are we?</h2>
         <p>Founded in 2014, Pham Enterprises remains one of the fastest-growing tech private equity firms in North 
             America. We assist businesses in cutting costs while dodging lawsuits, ethically. In the span of ten years, our 
             team has grown into this huge amazing family of nearly 1000 employees each putting clients at the heart of everything we do.</p>
-        <h2>Why Us?</h2>
+        <h2>Why us?</h2>
         <ul>
             <li>We the best</li>
             <li>We think good</li>
@@ -93,13 +99,15 @@
             <li>We feel fantastic</li>
             <li>We the best</li>
         </ul>
+        <h2>What can we do?</h2>
+        <p>We're the way to, to happiness. Okay? We're the way to peace. We can unite cultures. We can cure cancer. We can solve world hunger. We can end wars. We can... eat planets.</p>
     </main>
     <footer>
         <address>
-            &copy;2014-2024 Pham Enterprises
-            <br> Charlotte
-            <br> North Carolina
-            <br> USA
+            (704) 123 456
+            <br>Charlotte
+            <br>North Carolina
+            <br>USA
         </address>
     </footer>
 </body>
