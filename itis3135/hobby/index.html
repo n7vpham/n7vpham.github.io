@@ -7,7 +7,7 @@
     <style>
         #body {
             background-color: #e1dfb6;
-            font-family: cursive;
+            font-family: cursive, Arial, Helvetica, sans-serif;
         }
         header {
             background-color: #8cb04e;
@@ -24,7 +24,7 @@
             color: #CA5010;
         }
         .nav a {
-            color: #0F7C0F;
+            color: #004100;
             text-decoration: none;
         }
         main {
@@ -61,13 +61,13 @@
     <header>
         <h1 id="title">Camping</h1>
         <nav class="nav justify-content-center flex-nowrap">
-                <a class="nav-link" href="#what">What</a> &#127795;
-                <a class="nav-link" href="#who">Who</a> &#127795;
-                <a class="nav-link" href="#when">When</a> &#127795;
-                <a class="nav-link" href="#where">Where</a> &#127795;
-                <a class="nav-link" href="#how">How</a> &#127795;
-                <a class="nav-link" href="#why">Why</a> &#127795;
-                <a class="nav-link" href="#ai">AI</a>
+                <a class="nav-link toggle-section" href="#what">What</a> &#127795;
+                <a class="nav-link toggle-section" href="#who">Who</a> &#127795;
+                <a class="nav-link toggle-section" href="#when">When</a> &#127795;
+                <a class="nav-link toggle-section" href="#where">Where</a> &#127795;
+                <a class="nav-link toggle-section" href="#how">How</a> &#127795;
+                <a class="nav-link toggle-section" href="#why">Why</a> &#127795;
+                <a class="nav-link toggle-section" href="#ai">AI</a>
         </nav>
     </header>
     <main class="mt-3">
@@ -168,13 +168,13 @@
     <footer>
         <nav class="nav justify-content-center">
             <p class="pt-3">Page Built by <a href="../pham-enterprises.com/" target="_blank">Pham Enterprises</a> &copy;2024</p>
-            <a class="nav-link" href="https://validator.w3.org/check?uri=referer" id="validation_link_html" class="tests" target="_blank">
+            <a class="nav-link tests" href="https://validator.w3.org/check?uri=referer" id="validation_link_html" target="_blank">
                 <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
             </a>
-            <a class="nav-link" href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css" class="tests" target="_blank">
+            <a class="nav-link tests" href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css" target="_blank">
                 <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
             </a>
-            <a class="nav-link" href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/npham13/itis3135/hobby/" id="validation_wcag_css" class="tests" target="_blank">
+            <a class="nav-link tests" href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/npham13/itis3135/hobby/" id="validation_wcag_css" target="_blank">
                 <img style="border:0;width:88px;height:31px" src="images/button_validation_wcag.png" alt="Valid WCAG!">
             </a>            
         </nav>    
@@ -185,7 +185,7 @@
         document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
 
         document.addEventListener('DOMContentLoaded', (event) => {
-            const links = document.querySelectorAll('.nav-link'); // Get all the links
+            const links = document.querySelectorAll('.toggle-section'); // Get all the links
             const sections = document.querySelectorAll('main > section'); // Get all the sections
 
             links.forEach(link => {
