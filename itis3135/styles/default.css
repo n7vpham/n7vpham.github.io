@@ -145,3 +145,7 @@ hr {
     background-color: steelblue;
     border-color: steelblue;
 }
+
+ol {
+    margin-bottom: 1em;
+}
