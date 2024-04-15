@@ -4,7 +4,7 @@
 
 body {
     background-color: #176F82;
-    color: #023A44;
+    color: lightblue;
     font-family: Helvetica;
     margin: 0;
 }
@@ -34,7 +34,7 @@ nav a {
 
 h1 {
     text-align: center;
-    color: #362852;
+    color: #1F1D43;
 }
 
 img {
