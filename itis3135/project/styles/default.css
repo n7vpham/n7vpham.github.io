@@ -3,8 +3,8 @@
 }
 
 body {
-    background-color: #176F82;
-    color: lightblue;
+    background-color: #B9F3E4;
+    color: #05505E;
     font-family: Helvetica;
     margin: 0;
 }
@@ -34,7 +34,7 @@ nav a {
 
 h1 {
     text-align: center;
-    color: #1F1D43;
+    color: #3C285B; 
 }
 
 img {
