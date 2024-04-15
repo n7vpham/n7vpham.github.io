@@ -7,25 +7,33 @@
     <link rel="stylesheet" href="./styles/default.css">
 </head>
 <body>
-    <nav>
-        <p id="not-a">Charlotte Giants<p>
-        <a href="./">Home</a>
-        <a href="guide.html">Guide</a>
-        <a href="about.html">About</a>
-        <a href="perks.html">Perks</a>
-        <a href="join.html">Join Us</a>
-    </nav>
+    <header>
+        <nav>
+            <p id="not-a">Charlotte Giants<p>
+            <a href="./">Home</a>
+            <a href="guide.html">Guide</a>
+            <a href="about.html">About</a>
+            <a href="perks.html">Perks</a>
+            <a href="join.html">Join Us</a>
+        </nav>
+    </header>
     <main>
         <h1>Guide</h1>
+        <p style="text-align: center;">Under Construction!</p>
     </main>
     <footer>
         <p>Page Built by <a id="firm" href="pham-enterprises.com/" target="_blank">Pham Enterprises</a> &copy;2024</p>
-        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html" class="tests" target="_blank">
-            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-        </a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css" class="tests" target="_blank">
-            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-        </a>
+        <div>
+            <a class="nav-link" href="https://validator.w3.org/check?uri=referer" id="validation_link_html" target="_blank">
+                <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+            </a>
+            <a class="nav-link" href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css" target="_blank">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+            </a>
+            <a class="nav-link" href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/npham13/itis3135/project/" id="validation_wcag_css" target="_blank">
+                <img style="border:0;width:88px;height:31px" src="images/button_validation_wcag.png" alt="Valid WCAG!">
+            </a>        
+        </div>
     </footer>
     <script>
         document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
