@@ -8,21 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Nam Pham's New Prawn &#129424; ITIS 3135</h1>
-        <nav>
-            <a href="./">Home</a> ||
-            <a href="introduction.html">Introduction</a> ||
-            <a href="contract.html">Contract</a> || 
-            <a href="about.html">About</a> || 
-            <a href="tables.html">Tables</a> ||  
-            <a href="form.html">Form</a> || 
-            <a href="website_evaluations.html">Website Evaluations</a> || 
-            <a href="stuff/$0  CR@!PPY ^O&o.htm">CRAPPY</a> ||
-            <a href="project_overview.html">Project Overview</a> || 
-            <a href="./project/" target="_blank">PROJECT</a> || 
-            <a href="eclipse.html">Eclipse</a> || 
-            <a href="hobby/" target="_blank">Hobby</a> 
-        </nav> 
+        <div data-include="components/header.html"></div>
     </header>
     <main>
         <h2>Introduction</h2>
@@ -52,23 +38,9 @@
         </ul>
     </main>
     <footer>
-        <nav>
-            <a href="https://webpages.charlotte.edu/npham13/">Charlotte.edu</a> ||
-            <a href="https://github.com/n7vpham/n7vpham.github.io">Github</a> ||
-            <a href="https://n7vpham.github.io/itis3135/">Github.io</a> ||
-            <a href="https://www.freecodecamp.org/n7vpham">freeCodeCamp</a> ||
-            <a href="https://www.codecademy.com/profiles/n7vpham">Codeacademy</a> ||
-            <a href="https://www.linkedin.com/in/n7vpham">LinkedIn</a>
-        </nav>
-        <p>Page Built by <a href="pham-enterprises.com/" target="_blank">Pham Enterprises</a> &copy;2024</p>
-        <p><em>"Sea you at the beach"</em></p>
-        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html" class="tests" target="_blank">
-            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-        </a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css" class="tests" target="_blank">
-            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-        </a>
+        <div data-include="components/footer.html"></div>
     </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
     <script>
         document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
