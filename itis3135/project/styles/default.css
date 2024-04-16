@@ -38,7 +38,7 @@ a:hover {
     padding: 5px;
 }
 .current {
-    border-bottom: 1px double #F7DE6A;
+    border-bottom: 1px solid #F7DE6A;
     box-shadow: 0 1px 0  #F7DE6A;
     color: #F7DE6A;
 }
