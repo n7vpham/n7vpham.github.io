@@ -1,6 +1,6 @@
 <nav>
     <p id="not-a" onselectstart="return false">Charlotte Giants<p>
-    <a href="./">Home</a>
+    <a href="index.html">Home</a>
     <a href="guide.html">Guide</a>
     <a href="about.html">About</a>
     <a href="perks.html">Perks</a>
@@ -13,7 +13,7 @@
         const currentUrl = window.location.href;
         const homepageUrl = new URL(links[0].href);
 
-        if (currentUrl === homepageUrl.href || currentUrl === homepageUrl.origin + '/') {
+        if (currentUrl === homepageUrl.href || currentUrl === 'index.html' || currentUrl === homepageUrl.origin) {
             links[0].classList.add('current');
         } else {
             links.forEach(link => {
