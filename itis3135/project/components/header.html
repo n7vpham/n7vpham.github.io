@@ -11,10 +11,10 @@
     function highlightCurrentPage() {
         var nav = document.querySelector("nav");
         var links = nav.getElementsByTagName("a");
-        var currentPage = location.pathname.split("/").pop().split(".")[0];
+        var currentPage = window.location.href.split("/").pop().split(".")[0];
         for (var i = 0; i < links.length; i++) {
             var link = links[i];
-            var linkPage = link.getAttribute("href").split("/").pop().split(".")[0];
+            var linkPage = link.href.split("/").pop().split(".")[0];
             if (linkPage == currentPage) {
                 link.classList.add("current");
             }
