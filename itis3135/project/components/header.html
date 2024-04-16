@@ -9,18 +9,15 @@
 
 <script>
     function highlightCurrentPage() {
-        const links = document.querySelectorAll('header nav a');
-        const currentUrl = window.location.href;
-        const homepageUrl = new URL(links[0].href);
-
-        if (currentUrl === homepageUrl.href || currentUrl === 'index.html' || currentUrl === homepageUrl.origin) {
-            links[0].classList.add('current');
-        } else {
-            links.forEach(link => {
-                if (link.href === currentUrl) {
-                    link.classList.add('current');
-                }
-            });
+        var nav = document.querySelector("nav");
+        var links = nav.getElementsByTagName("a");
+        var currentPage = location.pathname.split("/").pop().split(".")[0];
+        for (var i = 0; i < links.length; i++) {
+            var link = links[i];
+            var linkPage = link.getAttribute("href").split("/").pop().split(".")[0];
+            if (linkPage == currentPage) {
+                link.classList.add("current");
+            }
         }
     }
     highlightCurrentPage();
