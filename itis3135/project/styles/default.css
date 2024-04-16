@@ -76,3 +76,9 @@ footer > p > a {
     color: #EADA80;
     text-decoration: none;
 }
+
+footer > div > a:hover {
+    background-color: unset !important;
+    color: unset !important;
+    padding: unset !important;
+}
