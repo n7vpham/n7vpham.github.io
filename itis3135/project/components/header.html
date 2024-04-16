@@ -6,20 +6,23 @@
     <a href="perks.html">Perks</a>
     <a href="join.html">Join Us</a>
 </nav>
-<!--
+
 <script>
     function highlightCurrentPage() {
-        var nav = document.querySelector("nav");
-        var links = nav.getElementsByTagName("a");
-        var currentPage = window.location.href.split("/").pop().split(".")[0];
-        for (var i = 0; i < links.length; i++) {
-            var link = links[i];
-            var linkPage = link.href.split("/").pop().split(".")[0];
-            if (linkPage == currentPage) {
-                link.classList.add("current");
+        const links = document.querySelectorAll('header nav a');
+        const currentUrl = window.location.href;
+        const homepageUrl = new URL(links[0].href);
+
+        if (currentUrl === homepageUrl.href) {
+            links[0].classList.add('current');
+        } else {
+            for (let i = 1; i < links.length; i++) {
+                if (currentUrl === links[i].href) {
+                    links[i].classList.add('current');
+                    break;
+                }
             }
         }
     }
     highlightCurrentPage();
 </script>
--->
