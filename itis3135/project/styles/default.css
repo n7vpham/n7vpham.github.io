@@ -82,3 +82,11 @@ footer > div > a:hover {
     color: unset !important;
     padding: unset !important;
 }
+
+/* Done with template */ 
+img {
+    text-align: center;
+    width: 44%;
+    box-shadow: 0 0 3px 3px #05505E;
+    border-radius: 8px 10px;
+}
