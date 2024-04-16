@@ -1,0 +1,27 @@
+<nav>
+    <p id="not-a" onselectstart="return false">Charlotte Giants<p>
+    <a href="./">Home</a>
+    <a href="guide.html">Guide</a>
+    <a href="about.html">About</a>
+    <a href="perks.html">Perks</a>
+    <a href="join.html">Join Us</a>
+</nav>
+
+<script>
+    function highlightCurrentPage() {
+        const links = document.querySelectorAll('header nav a');
+        const currentUrl = window.location.href;
+        const homepageUrl = new URL(links[0].href);
+
+        if (currentUrl === homepageUrl.href || currentUrl === homepageUrl.origin + '/') {
+            links[0].classList.add('current');
+        } else {
+            links.forEach(link => {
+                if (link.href === currentUrl) {
+                    link.classList.add('current');
+                }
+            });
+        }
+    }
+    highlightCurrentPage();
+</script>

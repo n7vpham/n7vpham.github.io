@@ -32,6 +32,17 @@ nav a {
     font-size: 20px;
 }
 
+a:hover {
+    background-color: #EADA80;
+    color: #05505E;
+    padding: 5px;
+}
+.current {
+    border-bottom: 1px double #F7DE6A;
+    box-shadow: 0 1px 0  #F7DE6A;
+    color: #F7DE6A;
+}
+
 h1 {
     text-align: center;
     color: #3C285B; 

@@ -9,35 +9,22 @@
 <body>
     <header>
         <nav>
-            <p id="not-a" onselectstart="return false">Charlotte Giants<p>
-            <a href="./">Home</a>
-            <a href="guide.html">Guide</a>
-            <a href="about.html">About</a>
-            <a href="perks.html">Perks</a>
-            <a href="join.html">Join Us</a>
+            <div data-include="components/header.html"></div>
         </nav>
     </header>
     <main>
         <h1>Home</h1>
-        <p style="text-align: center;">Under Construction!</p>
+        <p style="text-align: center;">Under Construction! Will have a big picture of Gigantic: Rampage Edition, paragraphs introducing what it is and its history, and (maybe) a slideshow.</p>
     </main>
     <footer>
-        <p>Page Built by <a id="firm" href="../pham-enterprises.com/" target="_blank">Pham Enterprises</a> &copy;2024</p>
-        <div>
-            <a class="nav-link" href="https://validator.w3.org/check?uri=referer" id="validation_link_html" target="_blank">
-                <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
-            </a>
-            <a class="nav-link" href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css" target="_blank">
-                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-            </a>
-            <a class="nav-link" href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/npham13/itis3135/project/" id="validation_wcag_css" target="_blank">
-                <img style="border:0;width:88px;height:31px" src="images/button_validation_wcag.png" alt="Valid WCAG!">
-            </a>        
-        </div>
+        <div data-include="components/footer.html"></div>
     </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
     <script>
+        highlightCurrentPage();
         document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-    </script>    
+    </script>
+    <script src="scripts/initial.js"></script>    
 </body>
 </html>
