@@ -1,6 +1,6 @@
 <nav>
     <p id="not-a" onselectstart="return false">Charlotte Giants<p>
-    <a href="index.html">Home</a>
+    <a href="./">Home</a>
     <a href="guide.html">Guide</a>
     <a href="about.html">About</a>
     <a href="perks.html">Perks</a>
@@ -11,11 +11,15 @@
     function highlightCurrentPage() {
         const links = document.querySelectorAll('header nav a');
         const currentUrl = window.location.href;
-        
-        for (let i = 0; i < links.length; i++) {
-            if (currentUrl === links[i].href) {
-                links[i].classList.add('current');
-                break;
+
+        if (currentUrl.endsWith('ex.html')) {
+            links[0].classList.add('current');
+        } else {
+            for (let i = 0; i < links.length; i++) {
+                if (currentUrl === links[i].href) {
+                    links[i].classList.add('current');
+                    break;
+                }
             }
         }
     }
