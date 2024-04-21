@@ -16,10 +16,8 @@ nav {
     color: #D7DEBF;
 }
 #not-a {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 25px;
-    -webkit-text-stroke-width: thin;
-    -webkit-text-stroke-color: black;
     cursor: default;
     margin-left: 0.5px;
 }
