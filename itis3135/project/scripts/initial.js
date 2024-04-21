@@ -2,7 +2,7 @@ let lastScrollTop = 0;
 const header = document.querySelector('header');
 
 window.addEventListener('scroll', function() {
-    var scrollTop = window.scrolly || document.documentElement.scrollTop;
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     
     if (scrollTop > lastScrollTop) {
         header.style.top = '-75px';
