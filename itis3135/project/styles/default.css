@@ -96,7 +96,7 @@ footer > div > a:hover {
     background-color: #D7DEBF;
     padding: 1px;
     margin-right: 1px;
-    border-radius: 50% 20% / 10% 40%;
+    border-radius: 8px 10px;
 }
 
 header {
