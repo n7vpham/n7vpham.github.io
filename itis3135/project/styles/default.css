@@ -103,8 +103,9 @@ footer > div > a:hover {
 #logo img {
     max-width: 100%;
     max-height: 100%;
+    min-width: 25px;
     background-color: #D7DEBF;
-    /*padding: 1px;
+    padding: 1px;
     margin-right: 1px;
-    border-radius: 8px 10px;*/
+    border-radius: 8px 10px;
 }
