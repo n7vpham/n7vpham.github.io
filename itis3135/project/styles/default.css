@@ -9,6 +9,19 @@ body {
     margin: 0;
 }
 
+header {
+    display: flex;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+}
+
+main {
+    margin-top: 90px;
+}
+
 nav {
     display: flex;
     background-color: #08333F;
@@ -97,9 +110,4 @@ footer > div > a:hover {
     padding: 1px;
     margin-right: 1px;
     border-radius: 8px 10px;
-}
-
-header {
-    display: flex;
-    height: 77px; 
 }
