@@ -9,11 +9,36 @@ body {
     margin: 0;
 }
 
+header {
+    display: flex;
+    height: 75px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: top 0.3s;
+    z-index: 1000; 
+}
 nav {
     display: flex;
     background-color: #08333F;
     width: 100%;
     color: #D7DEBF;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#logo img {
+    max-width: 52.5px;
+    max-height: 66px;
+    min-width: 25px;
+    background-color: #D7DEBF;
+    padding: 1px;
+    margin-right: 1px;
+    border-radius: 8px 10px;
 }
 #not-a {
     font-weight: 600;
@@ -21,6 +46,7 @@ nav {
     cursor: default;
     margin-left: 0.5px;
 }
+
 nav a {
     position: relative;
     top: 13px;
@@ -29,7 +55,6 @@ nav a {
     color:#EADA80;
     font-size: 20px;
 }
-
 a:hover {
     background-color: #EADA80;
     color: #05505E;
@@ -39,6 +64,10 @@ a:hover {
     border-bottom: 1px solid #F7DE6A;
     box-shadow: 0 1px 0  #F7DE6A;
     color: #F7DE6A;
+}
+
+main {
+    margin-top: 90px;
 }
 
 h1 {
@@ -80,30 +109,4 @@ footer > div > a:hover {
     padding: unset !important;
 }
 
-/* Done with template. Adding logo */
 
-#logo {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-#logo img {
-    max-width: 35px;
-    max-height: 44px;
-    min-width: 25px;
-    background-color: #D7DEBF;
-    padding: 1px;
-    margin-right: 1px;
-    border-radius: 8px 10px;
-}
-
-header {
-    display: flex;
-    height: 75px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    transition: top 0.3s;
-    z-index: 1000; 
-}
