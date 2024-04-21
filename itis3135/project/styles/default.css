@@ -15,7 +15,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    transition: top 0.2s;
+    transition: top 0.3s;
     z-index: 1000; 
 }
 nav {
@@ -67,7 +67,7 @@ a:hover {
 }
 
 main {
-    margin-top: 90px;
+    margin-top: 95px;
 }
 
 h1 {
