@@ -18,37 +18,40 @@ header {
     transition: top 0.3s;
     z-index: 1000; 
 }
-nav {
+#container {
     display: flex;
+    align-items: center;
     background-color: #08333F;
     width: 100%;
     color: #D7DEBF;
 }
 
 #logo {
+    margin-left: 30px;
     display: flex;
     align-items: center;
     height: 100%;
 }
-
 #logo img {
-    max-width: 52.5px;
-    max-height: 66px;
-    min-width: 25px;
+    max-width: 42px;
+    max-height: 52.8px;
+    min-width: 35px;
     background-color: #D7DEBF;
     padding: 1px;
     margin-right: 1px;
     border-radius: 8px 10px;
 }
-#not-a {
-    font-weight: 600;
-    font-size: 25px;
+h1 {
     cursor: default;
     margin-left: 0.5px;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
 nav a {
-    position: relative;
     top: 13px;
     margin-left: 30px;
     text-decoration: none;
@@ -70,18 +73,10 @@ main {
     margin-top: 95px;
 }
 
-h1 {
+h2 {
     text-align: center;
-    color: #3C285B; 
+    color: #3C285B
 }
-
-img {
-    display: block;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 footer {
     display: flex;
     justify-content: space-evenly;
