@@ -5,42 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nam Pham's New Prawn || ITIS3135 || Slideshow</title>
     <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/slides.css">
 </head>
 <body>
-    <header>
+    <header class="shead">
         <div data-include="components/header.html"></div>
     </header>
     <main>
         <h2>Slideshow</h2>
-        <h2>Nam Pham || New Prawn</h2>
-        <figure>
-            <img src="images/mappho.jpg" alt="Vietnam">
-            <figcaption>My home country is tiny compared to America</figcaption>
-        </figure>
-        <ul class="paragraph">
-            <li><b>Personal Background:</b> I was born in Vietnam and moved to the US when I was 14 years old.</li>
-            <li><b>Professional Background:</b> Worked as a part-time warehouse associate for FedEx Express and then as a full-time tugger operator for Stanley Black & Decker for about two years.</li>
-            <li><b>Academic Background:</b> High school diploma and Associate in Science degree. Currently, I am trying to graduate with a double major in computer science (concentration in software engineering) and general math.</li>
-            <li><b>Background in this Subject:</b> I did learn a little bit about web design way back in high school. However, I don’t remember any of it, so I guess my background in this subject is nonexistent.</li>
-            <li><b>Primary Computer Platform:</b> Windows 10 at home and school.</li>
-            <li>
-                <b>Courses I'm Taking & Why:</b>
-                <ul class="paragraph">
-                    <li><b>ITIS 3135 - Web App Design and Development:</b> I think being able to design and develop web-based applications is a useful skill to have.</li>
-                    <li><b>ITSC 2600 - CS Program, Identity, Career</b></li>
-                    <li><b>ITSC 3155 - Software Engineering:</b> to learn what it means to be a SWE.</li>
-                    <li><b>ITSC 3688 - Comp & Their Impact on Society</b></li>
-                    <li><b>MATH 3142 - Adv Calc of Several Variables</b></li>
-                </ul>
-            </li>
-            <li><b>Funny/Interesting Item to Remember me by:</b> I love gaming.</li>
-            <li><b>I'd also like to Share:</b> Looking forward to designing my own webpages.</li>
-        </ul>
+
+        <div class="container" style="width:70%; margin:auto;">
+        
+            <img class="mySlides" src="images/1-nachos.webp" style="width:100%">
+            <img class="mySlides" src="images/2-anchovies.webp" style="width:100%">
+            <img class="mySlides" src="images/3-macaroni.webp" style="width:100%">
+            <img class="mySlides" src="images/4-pho.webp" style="width:100%">
+            <img class="mySlides" src="images/5-hamburger.webp" style="width:100%">
+            <img class="mySlides" src="images/6-adobo.webp" style="width:100%">
+            <img class="mySlides" src="images/7-meatballs.webp" style="width:100%">
+        
+            <div id="menu">
+                <a onclick="plusSlides(-1)">&#10094;</a>
+                <p id="caption"></p>
+                <a onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="thumb" src="images/01-nachos.webp" style="width:100%" onclick="currentSlide(1)" 
+                    alt="N - for Nachos">
+                </div>
+                <div class="column">
+                    <img class="thumb" src="images/02-anchovies.webp" style="width:100%" onclick="currentSlide(2)" 
+                    alt="A - for Anchovies">
+                </div>
+                <div class="column">
+                    <img class="thumb" src="images/03-macaroni.webp" style="width:100%" onclick="currentSlide(3)"
+                        alt="M - for Macaroni">
+                </div>
+                <div class="column">
+                    <img class="thumb" src="images/04-pho.webp" style="width:100%" onclick="currentSlide(4)"
+                        alt="P - for Pho">
+                </div>
+                <div class="column">
+                    <img class="thumb" src="images/05-hamburger.webp" style="width:100%" onclick="currentSlide(5)"
+                        alt="H - for Hamburger">
+                </div>
+                <div class="column">
+                    <img class="thumb" src="images/06-adobo.webp" style="width:100%" onclick="currentSlide(6)" 
+                    alt="A - for Adobo">
+                </div>
+                <div class="column">
+                    <img class="thumb" src="images/07-meatballs.webp" style="width:100%" onclick="currentSlide(7)" 
+                    alt="M - for Meatballs">
+                </div>
+            </div>
+        </div>
+
+        <h3>Prompts used by DALL-E on GPT-4:</h3>
+        <div id="box">
+            <ol>
+                <li>Create a horizontal photo of nachos</li>
+                <li>Create a horizontal photo of a can of anchovy fillets packed in oil</li>
+                <li>Create a horizontal photo of marcaroni</li>
+                <li>Create a horizontal photo of pho</li>
+                <li>Create a horizontal photo of Oklahoma-style onion hamburger</li>
+                <li>Create a horizontal photo of adobo</li>
+                <li>Create a horizontal photo of meatballs</li>
+            </ol>
+        </div>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/slides.js"></script>
     <script>
         document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);

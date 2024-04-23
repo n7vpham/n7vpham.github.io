@@ -1,0 +1,80 @@
+/* Quick fix of alignment due to default.css*/
+body {
+    text-align: unset;
+}
+header, h2, h3, footer
+{
+    text-align: center;
+}
+
+main {
+    margin-bottom: 26px;
+}
+
+
+.container {
+    margin-bottom: 100px;
+}
+
+#menu > a {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#menu > a:hover {
+    background-color: unset;
+    color: springgreen;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: midnightblue;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 14.285%;
+}
+
+.thumb {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.active,
+.thumb:hover {
+    opacity: 1;
+}
+
+#caption {
+    margin: auto;
+    padding: 5px;
+}
+
+ol {
+    margin-top: -1px;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: unset;
+}
+
+#box {
+    text-align: center;
+}
+
