@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nam Pham's New Prawn || ITIS3135 || Arrays</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/arrays.css">
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Arrays</h2>
+        <div style="width:40%; margin:auto; margin-bottom:30px;">
+            <div style="text-align:left;">
+                <label for="person">Person:</label>
+            </div>
+            <input style="margin-bottom:8px;" type="text" id="person">
+            <div style="text-align:left;">
+                <label for="salary">Salary:</label>
+            </div>
+            <input style="margin-bottom:10px" type="text" id="salary" placeholder="Enter salary">
+            <button onclick="addSalary()" style="background-color: midnightblue; color: white; font-weight: bold;">Add Salary</button>
+            
+            <br><br>
+            
+            <div style="display:flex;">
+                <label for="selectPerson">Select Person:</label>
+                <select id="selectPerson"></select>
+                <label for="newSalary">New Salary:</label>
+                <input  style="margin-bottom:10px" type="text" id="newSalary" placeholder="Enter new salary">
+            </div>
+            <button onclick="modifySalary()" style="background-color: midnightblue; color: white; font-weight: bold;">Modify
+                Salary</button>
+            
+            <br><br>
+            
+            <button onclick="displayResults()" style="background-color: steelblue; color: white; font-weight: bold;">Display
+                Results</button>
+            
+            <button onclick="displaySalary()" style="background-color: steelblue; color: white; font-weight: bold;">Display
+                Salary</button>
+            
+            <div id="results"></div>
+            
+            <table id="results_table">
+                <thead>
+                    <tr>
+                        <th>Person</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/arrays.js"></script>
+</body>
+
+</html>
