@@ -15,10 +15,18 @@
     <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css" class="tests" target="_blank">
         <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
     </a>
-    <a id="validation_link_disability" class="tests" target="_blank">
+    <button onclick="location.href='https://wave.webaim.org/report#/'" type="button" id="validation_link_disability" class="tests" target="_blank">
         <img style="border:0;width:88px;height:31px" src="images/button_validation_wcag.png" alt="Valid Disabiliy/Accessibility Design!">
-    </a>
+    </button>
     <button type="button"
         onclick="document.querySelectorAll('link[rel=stylesheet]').forEach(function(e)	{e.setAttribute('href', '');});">No
         CSS</button>
 </div>
+
+<script>
+    const attr = document.createAttribute("href");
+    attr.value = "https://wave.webaim.org/report#/" + location.href;
+    const test = "location.href='https://wave.webaim.org/report#/'" + location.href;
+    console.log(test);
+    document.getElementById("validation_link_disability").setAttribute("onclick", "location.href='https://wave.webaim.org/report#/'" + location.href);
+</script>
