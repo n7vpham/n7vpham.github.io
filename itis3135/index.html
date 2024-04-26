@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nam Pham's New Prawn || ITIS3135 || Home</title>
     <link rel="stylesheet" href="styles/default.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -20,14 +19,9 @@
     </footer>
     <script src="scripts/HTMLInclude.min.js"></script>
     <script>
-        $("[href='https://wave.webaim.org/report#/']").click(function (event) {
-                event.preventDefault();
-            });
-    </script>
-    <script>
+        const link = "https://wave.webaim.org/report#/" + location.href;
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-        const link = "https://wave.webaim.org/report#/" + location.href;
         document.getElementById("validation_link_disability").setAttribute("href", link);
     </script>
 </body>
