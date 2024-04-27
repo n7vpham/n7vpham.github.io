@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nam Pham's New Prawn || ITIS3135 || Calculator</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/cal.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Calculator</h2>
+        <div class="main_holder">
+            <div class="mycalc">
+                <div class="screen">
+                    <input type="text" name="screen" id="my_screen">
+                </div>
+
+                <div class="buttons">
+                    <div>
+                        <input type="button" value="AC" id="AC">
+                        <input type="button" value="DE" ID="DE">
+                        <input type="button" value="." id=".">
+                        <input type="button" value="/" id="/" class="operator" id="dev">
+                    </div>
+                    <div>
+                        <input type="button" value="7" id="7">
+                        <input type="button" value="8" id="8">
+                        <input type="button" value="9" id="9">
+                        <input type="button" value="*" class="operator" id="multi">
+                    </div>
+                    <div>
+                        <input type="button" value="4" id="4">
+                        <input type="button" value="5" id="5">
+                        <input type="button" value="6" id="6">
+                        <input type="button" value="-" class="operator" id="sub">
+                    </div>
+                    <div>
+                        <input type="button" value="1" id="1">
+                        <input type="button" value="2" id="2">
+                        <input type="button" value="3" id="3">
+                        <input type="button" value="+" class="operator" id="addittion">
+                    </div>
+                    <div>
+                        <input type="button" value="0" id="0">
+                        <input type="button" value="++" id="increament" class="operator">
+                        <input type="button" value="--" id="decreament" class="operator">
+                        <input type="button" value="=" class="operator" id="equals">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        document.getElementById("validation_link_disability").setAttribute("href", "https://wave.webaim.org/report#/" + location.href);
+    </script>
+    <script src="scripts/calculator.js"></script>
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+</body>
+</html>
