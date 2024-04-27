@@ -10,10 +10,14 @@ h2 {
 }
 
 .buttons input {
-    margin: 1%;
+    margin: 3%;
     width: 21%;
     height: 10vh;
     border-radius: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     font-size: 1.5em;
     color: midnightblue;
@@ -28,7 +32,7 @@ h2 {
 }
 
 #equals {
-    width: 45%;
+    width: 20%;
 }
 
 .mycalc {
@@ -55,12 +59,4 @@ h2 {
     margin-left: 4%;
     text-align: right;
     font-size: 4em;
-}
-.buttons input {
-    margin: 3%;
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    font-size: 2.3em;
-    cursor: pointer;
 }
