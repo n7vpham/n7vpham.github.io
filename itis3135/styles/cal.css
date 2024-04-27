@@ -1,4 +1,4 @@
-/* For arrays.html */
+/* For calculator.html */
 h2 {
     margin-bottom: 40px;
 }
@@ -7,15 +7,6 @@ h2 {
     height: 15vh;
     margin: 2%;
     padding-top: 3%;
-}
-
-.screen input {
-    width: 98%;
-    height: 14vh;
-    border-radius: 10px;
-    margin-left: 1%;
-    text-align: right;
-    font-size: 4em;
 }
 
 .buttons input {
@@ -34,38 +25,26 @@ h2 {
 
 .operator {
     background: steelblue;
-
 }
 
 #equals {
     width: 45%;
 }
 
-.main_holder {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 27px;
-    padding-bottom: 30px;
-}
-
-
 .mycalc {
+    margin: auto;
     background: lightsteelblue;
     width: 40%;
-    height: 100vh;
+    height: 50%;
     border-radius: 10px;
     border: 2px solid midnightblue;
-    padding-bottom: 30px;
+    margin-bottom: 27px;
 }
 .screen {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 95%;
-    height: 15vh;
     margin: 2%;
 }
 
