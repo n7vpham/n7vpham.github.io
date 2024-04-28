@@ -44,10 +44,10 @@ function GetInput(){
 GetInput();
 
 function polygon(number){
-    let shapes = ["monogon", "bigon", "triangle", "quadrilateral", 
-    "pentagon", "hexagon", "heptagon", "octagon", "nonagon", "decagon"];
-
-    alert("The polygon with " + number + " side(s) is called a " + shapes[number] + ".");
+    let shapes = ["monogon", "digon", "trigon", "tetragon", 
+        "pentagon", "hexagon", "heptagon", "octagon", "nonagon", "decagon"];
+    number = Math.round(Math.abs(number));
+    alert("The polygon with " + number + " side(s) is called a " + shapes[number - 1] + ".");
 }
 
 let button_action_display = document.getElementById("button_action_display");
