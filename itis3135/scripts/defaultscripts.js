@@ -1,25 +1,20 @@
 function displayDate(){
     const date = new Date();
     let date_display = document.getElementById("time");
-
     let hours = date.getHours();
-    let am_pm = "";
-    let hour = "";
-    if(hours < 12){
-        am_pm = "am";
-    }else{
-        am_pm = "pm";
-        if(hours != 12){
-            hour = hours - 12;
-        }
-    }
-    let time = hour + ":" + date.getMinutes() + am_pm;
+    let am_pm = "am";
 
+    if(hours >= 12){
+        am_pm = "pm";
+        hours -= 12;
+    }
+
+    let time = hours + ":" + date.getMinutes() + am_pm;
     let week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"];
     let month = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
         "October", "November", "December"];
 
-    date_display.innerHTML = "It is currently " + time + " on " + week[date.getDay()] 
+    date_display.innerHTML = "Today is " + time + " on " + week[date.getDay()] 
         + ", " + date.getDate() +" " + month[date.getMonth()] + ", " + date.getFullYear();
 }
 
