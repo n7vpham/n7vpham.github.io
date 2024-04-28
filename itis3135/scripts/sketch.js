@@ -18,7 +18,7 @@ function setup() {
 function draw() {
     background(25, 25, 112);
     stroke(25, 25, 112);
-    square(20, 20, 60);
+    triangle(20, 71, 75, 45, 20, 15);
     xpos = xpos + xspeed * xdirection * 2.5;
     ypos = ypos + yspeed * ydirection * 1;
 
