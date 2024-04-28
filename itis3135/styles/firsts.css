@@ -1,5 +1,7 @@
 /* For firstscripts.html */
 form {
+    width: 30%;
+    margin: auto;
     text-align: left;
 }
 input {

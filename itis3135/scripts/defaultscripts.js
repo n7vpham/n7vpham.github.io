@@ -57,7 +57,6 @@ function pFunction(){
         button_action_display.innerHTML = `You chose <b>P</b>aper. I chose scissors. Sorry, you lose!`;
     });
 }
-
 pFunction();
 
 function rFunction(){
