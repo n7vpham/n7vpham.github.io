@@ -8,6 +8,7 @@ let ydirection = -1;
 
 function setup() {
     createCanvas(720, 400);
+    fill(25, 25, 112);
     frameRate(30);
     ellipseMode(RADIUS);
     xpos = width / 2;
@@ -23,7 +24,7 @@ function draw() {
 
     if (xpos > width - rad || xpos < rad) {
         xdirection *= -1;
-        ydirection -= 3;
+        ydirection -= 2;
         fill(25, 25, 112);
     }
     if (ypos > height - rad || ypos < rad) {
