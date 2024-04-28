@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nam Pham's New Prawn || ITIS3135 || First Scripts</title>
     <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/firsts.css">
 </head>
 <body>
     <header>
@@ -12,12 +13,30 @@
     </header>
     <main>
         <h2>First Scripts</h2>
-        <p class="paragraph-end">Hello, this is all the content of my ITIS 3135 course!</p>
+        <h3 id="time"></h3>
+        <form id="submit_form" style="width:30%; margin:auto;">
+            <label for="name" id="name_label">Enter your name:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="feeling" id="feeling_label">How are you feeling?</label>
+            <input type="text" name="feeling" id="feeling" required>
+            <label for="favorite_number" id="fav_number_label">Enter your favorite number (1 to 10):</label>
+            <input type="number" name="number" id="favorite_number" step="any" min="1" max="10" required>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+        <hr>
+        <div id="buttons">
+            <button type="button" id="pWord">P</button>
+            <button type="button" id="rWord">R</button>
+            <button type="button" id="aWord">A</button>
+            <button type="button" id="wWord">W</button>
+            <button type="button" id="nLetter">N</button>
+        <p id="button_action_display"></p>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/defaultscripts.js"></script>
     <script>
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
