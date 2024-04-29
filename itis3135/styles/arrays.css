@@ -37,3 +37,10 @@ td {
 #results p {
     margin-bottom: 10px;
 }
+
+button {
+    background-color: midnightblue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
