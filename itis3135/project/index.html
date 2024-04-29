@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charlotte Giants || Home</title>
-    <link rel="stylesheet" href="./styles/default.css">
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="../styles/slides.css">
 </head>
 <body>
     <header>
         <div data-include="components/header.html"></div>
     </header>
     <main>
-        <h2>Home</h2>
+        <h2>Home (WIP - ugly slideshow... but it is dynamic; will probably make it automatic)</h2>
         <p style="text-align: center;">Under Construction! Will have a big picture of Gigantic: Rampage Edition, paragraphs introducing what it is and its history, and (maybe) a slideshow.</p>
         <div style="width: 80%; margin:auto;">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At impedit quas, omnis aperiam earum natus pariatur laboriosam vero officia sint officiis repellat hic nisi rerum enim sit minus, numquam eligendi?</p>
@@ -32,13 +33,62 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maxime voluptatibus obcaecati deserunt a eos, alias quia omnis, autem, minima beatae architecto odio fugit temporibus laboriosam nobis iusto voluptatem asperiores.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae veniam itaque modi minus earum repudiandae, saepe, iusto dignissimos, incidunt ratione amet inventore. Modi exercitationem inventore alias provident dignissimos assumenda aspernatur!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga accusantium, rem nostrum possimus dicta aut doloremque dolor voluptates nulla excepturi corrupti, est deleniti? Quaerat obcaecati necessitatibus explicabo quia. Neque, cupiditate.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto exercitationem corporis alias modi quaerat veniam earum perferendis in suscipit saepe voluptatum, et eligendi enim dolore provident aliquam dignissimos. Cupiditate, perferendis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto exercitationem corporis alias modi quaerat veniam earum perferendis in suscipit saepe voluptatum, et eligendi enim dolore provident aliquam dignissimos. Cupiditate, perferendis?</p> 
         </div>
+
+        <div class="container" style="width:60%; margin:auto;">
+        
+            <img class="mySlides" src="images/gigantic-rampage-edition.avif" alt="1/7" style="width:100%">
+            <img class="mySlides" src="images/2.jpg" alt="2/7" style="width:100%">
+            <img class="mySlides" src="images/3.jpg" alt="3/7" style="width:100%">
+            <img class="mySlides" src="images/4.jpg" alt="4/7" style="width:100%">
+            <img class="mySlides" src="images/5.jpg" alt="5/7" style="width:100%">
+            <img class="mySlides" src="images/6.jpg" alt="6/7" style="width:100%">
+            <img class="mySlides" src="images/7.jpg" alt="7/7" style="width:100%">
+        
+            <div id="menu">
+                <a onclick="plusSlides(-1)">&#10094;</a>
+                <p id="caption"></p>
+                <a onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        
+            <div class="row">
+                <div class="column">
+                    <img class="thumb" src="" style="width:100%" onclick="currentSlide(1)"
+                        alt="1">
+                </div>
+                <div class="column">
+                    <img class="thumb" src="" style="width:100%" onclick="currentSlide(2)"
+                        alt="2">
+                </div>
+                <div class="column">
+                    <img class="thumb" src="" style="width:100%" onclick="currentSlide(3)"
+                        alt="3">
+                </div>
+                <div class="column">
+                    <img class="thumb" src="" style="width:100%" onclick="currentSlide(4)" alt="4">
+                </div>
+                <div class="column">
+                    <img class="thumb" src="" style="width:100%" onclick="currentSlide(5)"
+                        alt="5">
+                </div>
+                <div class="column">
+                    <img class="thumb" src="" style="width:100%" onclick="currentSlide(6)"
+                        alt="6">
+                </div>
+                <div class="column">
+                    <img class="thumb" src="" style="width:100%" onclick="currentSlide(7)"
+                        alt="7">
+                </div>
+            </div>
+        </div>
+
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/home.js"></script>
     <script>
         document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
