@@ -42,59 +42,6 @@ function preventSubmit(event) {
     displayIntroduction(name, mascot, image, imageCaption, personalBackground, professionalBackground, academicBackground, webDevBackground, primaryComputer, coursesArray, funnyThing, additionalInfo);
 }
 
-function resetForm() {
-    const introForm = document.getElementById('introForm');
-    introForm.innerHTML = `
-            <label for="name">Name:</label>
-            <input type="text" id="name" value="John Doe" required class="input-field">
-
-            <label for="mascot">Mascot:</label>
-            <input type="text" id="mascot" value="Prawn" required class="input-field">
-
-            <label for="image">Image:</label>
-            <input type="file" id="image" accept="image/png, image/jpeg" required>
-            <div id="loadImage"></div>
-
-            <label for="imageCaption">Image Caption:</label>
-            <input type="text" id="imageCaption" value="My photo of me" required class="input-field">
-
-            <label for="personalBackground">Personal Background:</label>
-            <textarea id="personalBackground" rows="4" required class="input-field">Grew up in the countryside...</textarea>
-
-            <label for="professionalBackground">Professional Background:</label>
-            <textarea id="professionalBackground" rows="4" required
-            class="input-field">Software Engineer at XYZ...</textarea>
-
-            <label for="academicBackground">Academic Background:</label>
-            <textarea id="academicBackground" rows="4" required class="input-field">Studied CS at ABC University...</textarea>
-
-            <label for="webDevBackground">Background in Web Development:</label>
-            <textarea id="webDevBackground" rows="4" required
-            class="input-field">Started web dev in 2000...</textarea>
-
-            <label for="primaryComputer">Primary Computer Platform:</label>
-            <input type="text" id="primaryComputer" value="Windows" required class="input-field">
-
-            <label>Courses currently taking:</label>
-            <div id="courses">
-                <input type="text" class="course input-field" required>
-            </div>
-            <button type="button" id="addCourseBtn">Add Course</button>
-
-            <label for="funnyThing">Funny thing?</label>
-            <input type="text" id="funnyThing" value="I laugh at dad jokes!" class="input-field">
-
-            <label for="additionalInfo">Anything else?</label>
-            <textarea id="additionalInfo" rows="4" class="input-field">I love hiking.</textarea>
-
-            <input type="checkbox" id="agreement" required>
-            <label for="agreement">I understand that what is on this page is not password protected and I will not put
-                anything here that I don’t want publicly available.</label>
-
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-    `;
-
     const imagePreview = document.getElementById('imagePreview');
     if (imagePreview) {
         imagePreview.innerHTML = '';
