@@ -157,7 +157,7 @@ main {
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     body {
-        background-color: #3399a2;
+        background-color: rgb(126, 154, 200);
     }
 }
 
@@ -171,6 +171,6 @@ main {
 /* Rule Overrides For Mobile Devices */
 @media screen and (min-width: 370px) and (max-width: 600px) {
     body {
-        background-color: slateblue;
+        background-color: #8470FF;
     }
 }
