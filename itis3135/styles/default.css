@@ -31,7 +31,7 @@ a:hover {
 }
 
 figure > img {
-    width: 44%;
+    width: 70%;
     box-shadow: 0 0 3px 3px midnightblue;
     border-radius: 8px 10px;
 }
@@ -148,8 +148,8 @@ ol {
 
 main {
     margin: 0 auto;
-    padding: 20px;
-    width: 90%;
+    padding: 15px;
+    width: 95%;
     max-width: 1000px;
     box-sizing: border-box;
 }
