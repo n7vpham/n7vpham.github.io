@@ -157,8 +157,7 @@ main {
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     body {
-        background-color: steelblue;
-        color: darkblue;
+        background-color: dodgerblue;
     }
 }
 
