@@ -51,8 +51,6 @@ function preventSubmit(event) {
     
     document.getElementById('introForm').addEventListener('submit', preventSubmit);
     document.getElementById('addCourseBtn').addEventListener('click', addCourse);
-}
-
 
 function addCourse() {
     const coursesDiv = document.getElementById('courses');
