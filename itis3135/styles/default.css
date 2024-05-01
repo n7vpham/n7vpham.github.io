@@ -157,6 +157,7 @@ main {
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     body {
+        max-width: 90%;
         background-color: rgb(126, 154, 200);
     }
 }
@@ -164,13 +165,15 @@ main {
 /* Rule Overrides For Tablet Devices */
 @media screen and (min-width: 601px) and (max-width: 980px) {
     body {
-        background-color: rgb(126, 154, 200);
+        max-width: 95%;
+        background-color: #a7a7ff;
     }
 }
 
 /* Rule Overrides For Mobile Devices */
 @media screen and (min-width: 370px) and (max-width: 600px) {
     body {
-        background-color: #8470FF;
+        max-width: 100%;
+        text-align: center;
     }
 }
