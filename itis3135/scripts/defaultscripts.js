@@ -26,7 +26,7 @@ function GetInput(){
     let favorite_number = document.getElementById("favorite_number");
     let submit_form = document.getElementById("submit_form");
 
-    submit_form.addEventListener('submit', (e) => {
+    submit_form.addEventListener('submit', () => {
         let name =  name_input.value;
         let feeling = feeling_input.value;
         let number = favorite_number.value;
