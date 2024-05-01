@@ -125,10 +125,6 @@ input {
     border: none;
 }
 
-p:last-of-type {
-    margin-bottom: 0;
-}
-
 #splitter {
     margin-top: 1em;
 }
@@ -148,4 +144,33 @@ hr {
 
 ol {
     margin-bottom: 1em;
+}
+
+main {
+    margin: 0 auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+    body {
+        background-color: slateblue;
+    }
+}
+
+/* Rule Overrides For Tablet Devices */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    body {
+        background-color: green;
+    }
+}
+
+/* Rule Overrides For Mobile Devices */
+@media screen and (min-width: 370px) and (max-width: 600px) {
+    body {
+        background-color: steelblue;
+    }
 }
