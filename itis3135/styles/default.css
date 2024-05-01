@@ -157,14 +157,14 @@ main {
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     body {
-        background-color: white;
+        background-color: #03A89E;
     }
 }
 
 /* Rule Overrides For Tablet Devices */
 @media screen and (min-width: 601px) and (max-width: 980px) {
     body {
-        background-color: green;
+        background-color: steelblue;
     }
 }
 
