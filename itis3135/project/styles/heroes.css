@@ -44,4 +44,5 @@
 
 .hero:hover .hover-message {
     display: flex;
+    padding: 10px;
 }

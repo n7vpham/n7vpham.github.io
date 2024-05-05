@@ -95,7 +95,6 @@ footer {
 footer div {
     display: flex;
     height: 100%;
-    align-items: center;
 }
 
 footer > p > a {
@@ -109,4 +108,9 @@ footer > div > a:hover {
     padding: unset !important;
 }
 
+footer p {
+    margin: unset !important;
+    padding: unset !important;
+    line-height: unset !important;
+}
 
