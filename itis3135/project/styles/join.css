@@ -29,6 +29,7 @@ label {
 
 input[type="submit"],
 input[type="reset"],
+input[type="button"],
 button {
     padding: 10px 20px;
     margin-top: 20px;
@@ -41,9 +42,10 @@ button {
 }
 
 input[type="submit"]:hover,
-input[type="reset"]:hover,
+input[type="reset"]:hover, 
+input[type="button"]:hover,
 button:hover {
-    background-color: #0056b3;
+    background-color: #004793;
 }
 
 #heroes {
