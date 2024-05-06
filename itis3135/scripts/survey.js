@@ -95,7 +95,7 @@ function displayIntroduction(name, mascot, image, imageCaption, personalBackgrou
             <li><b>I'd also like to Share:</b> ${additionalInfo}</li>
         </ul>
         <div style="text-align:center;">
-            <a style="background-color:midnightblue; color:white; padding:8px 15px;" href="#" onclick="resetForm()">Reset Form</a>
+            <a style="background-color:midnightblue; color:white; padding:8px 15px;" href="./byo_intro.html" onclick="resetForm()">Reset Form</a>
         </div>
     `;
     
