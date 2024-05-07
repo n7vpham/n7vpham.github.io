@@ -36,3 +36,7 @@ li {
 li:last-of-type {
     margin-bottom: 0;
 }
+
+li:first-of-type {
+    margin-top: -10px;
+}
