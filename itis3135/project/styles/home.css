@@ -25,6 +25,7 @@ main p {
 }
 
 .button:hover {
+    padding: 10px 20px;
     background-color: #1b2838;
     color: white;
 }
@@ -74,4 +75,16 @@ main p {
     to {
         opacity: 1
     }
+}
+
+#team {
+    text-decoration: none;
+    color: #005035;
+    font-weight: bold;
+}
+
+#team:hover {
+    padding: 0;
+    background-color: #005035;
+    color: white;
 }

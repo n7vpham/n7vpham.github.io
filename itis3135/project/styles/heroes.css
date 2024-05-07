@@ -46,3 +46,9 @@
     display: flex;
     padding: 10px;
 }
+
+.hero-gallery > p {
+    text-align: center;
+    margin: 0 20% 20px 20%;
+    font-size: 18px;
+}
