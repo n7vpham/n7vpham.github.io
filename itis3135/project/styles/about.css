@@ -29,12 +29,9 @@ h3 {
 }
 
 #table-wrap {
+    margin-top: 25px;
     background-color: lavender;
     border: 1px solid midnightblue;
-}
-
-#table-wrap th {
-    margin-top: 20px;
 }
 
 table {
